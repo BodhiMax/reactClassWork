@@ -19,8 +19,8 @@ class App extends Component {
       </header>
       <hr />
         <section className="donor-row">
-          <DonorList url={'oregon_individual_contributors'} />
-          <DonorList url={'oregon_business_contributors'} />
+          <DonorList init={5} url={'oregon_individual_contributors'} />
+          <DonorList init={5} url={'oregon_business_contributors'} />
         </section>
         <hr />
       </div>
