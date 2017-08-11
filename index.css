@@ -5,8 +5,11 @@ body {
 }
 
 .oregon-all {
+  background: rgb(54, 69, 79);
+  color: #FFF;
   display: flex;
   flex-direction: row;
+  text-align: center;
 }
 
 .oregon-all h2 {

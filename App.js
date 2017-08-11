@@ -19,7 +19,6 @@ class App extends Component {
           <h1>List of Donors</h1>
         </header>
         <AllOregon />
-        <hr />
           <section className="donor-row">
             <DonorList init={5} header={'Individual Contributors'} url={'oregon_individual_contributors'} />
             <DonorList init={5} header={'Business Contributors'} url={'oregon_business_contributors'} />
