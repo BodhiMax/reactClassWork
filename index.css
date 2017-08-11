@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.oregon-all {
+  display: flex;
+  flex-direction: row;
+}
+
+.oregon-all h2 {
+  font-size: 0.8em;
+}
+
+.App .contributor-records-change {
+  text-align: left;
+}
+
+.App .contributor-records-change label {
+  margin: 0 2.5em;
+}
+
+.donor-row {
+  display: flex;
+  flex: row;
+  justify-content: center;
+}
+
+.donor-row h3 {
+  margin-left: 2em;
+}
+
+.donor-row ul {
+  list-style: none;
+}
+
+.donor-row li {
+  min-width: 26em;
+  position: relative;
+  text-align: left;
+}
+
+.donor-row ul li span:first-of-type {
+  font-weight: bold;
+  margin-right: 1em;
+}
+
+.donor-row ul li span:nth-child(2) {
+  position: absolute;
+  right: 0;
+}
+
+.donor-row ul li span:nth-child(2)::before, .oregon-all span::before {
+  content: "$";
+}

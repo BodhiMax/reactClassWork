@@ -1,9 +1,10 @@
 
 import React from 'react';
+import { Buildlist } from './helperFunctions';
 
-function Buildlist (props) {
-  return <li><span className="contributor">{props.contributor.contributor_payee}</span><span className="contribution">{props.contributor.sum}</span></li>;
-}
+// function Buildlist (props) {
+//   return <li><span className="contributor">{props.contributor.contributor_payee}</span><span className="contribution">{props.contributor.sum}</span></li>;
+// }
 
 class DonorList extends React.Component {
 
@@ -55,6 +56,7 @@ componentDidMount() {
     return (
       <div className="App">
         <div className="contributor-records-change">
+          <h3>{this.props.header}</h3>
           <label htmlFor={this.props.url}>Display:</label><input id={this.props.url} onChange={this.getRecords} type="text" value={display_sum} />
         </div>
         <ul>{listItems}</ul>
